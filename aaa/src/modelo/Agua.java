@@ -1,7 +1,7 @@
 package modelo;
 
 public class Agua extends Persona {
-	private int PrecioAguaLitro;
+	private int precioAguaLitro;
 	private int horas;
 
 

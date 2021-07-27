@@ -18,7 +18,7 @@ public class VentanaDetalle extends JFrame {
         JPanel detallesPanel = new JPanel(new GridLayout(3, 2));
         mainPanel.add(detallesPanel);
 
-        JLabel nombreLabel = new JLabel(("nombre:"));
+        JLabel nombreLabel = new JLabel(("Nombre:"));
         JLabel nombrePersonaLabel = new JLabel(persona.getNombre());
         detallesPanel.add(nombrePersonaLabel);
 
@@ -37,7 +37,7 @@ public class VentanaDetalle extends JFrame {
 
         JButton volverBtn = new JButton("volver");
 
-        volverBtn.addActionListener(new ActionListener() {
+        volverBtn.addActionListener(new ActionListener() {//crea  una clase abtrasta
             @Override
             public void actionPerformed(ActionEvent e) {
                 VentanaPersona creacionPersonaWindow = new VentanaPersona();
@@ -55,7 +55,7 @@ public class VentanaDetalle extends JFrame {
                 JOptionPane.showMessageDialog(null, "Persona guardado en archivo \"persona.cvs\"");
             } else {
                 JOptionPane.showMessageDialog(null, "Ocurrio un error al guaradar los datos al archivo\"persona.cvs\"");
-
+//un metodo que me mustra un mensaje encima null te devuelve un void
 
             }
         });
